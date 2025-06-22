@@ -1,6 +1,5 @@
 import { Request, Response } from "express";
 import { Book, Genre } from "../models/books.model";
-// import { Book, Genre } from "../models/Book";
 
 export const createBook = async (req: Request, res: Response) => {
   try {
