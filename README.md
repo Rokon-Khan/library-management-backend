@@ -88,7 +88,7 @@ Follow these steps to set up and run the project locally.
 3. **Set Up Environment Variables**:
    Create a `.env` file in the root directory and add the following:
    ```env
-   PORT=3000
+   PORT=5000
    MONGO_URI=mongodb://localhost:27017/library
    ```
    - Replace `MONGO_URI` with your MongoDB connection string (e.g., MongoDB Atlas URI if using a cloud database).
@@ -110,7 +110,7 @@ Follow these steps to set up and run the project locally.
    ```
 
 6. **Verify the API**:
-   The API should be running at `http://localhost:3000`. Test endpoints using tools like **Postman** or **cURL**.
+   The API should be running at `http://localhost:5000`. Test endpoints using tools like **Postman** or **cURL**.
 
 ### Project Structure
 ```plaintext
@@ -128,7 +128,7 @@ Follow these steps to set up and run the project locally.
 
 ## Usage
 1. **Test the API Locally**:
-   Use Postman or similar tools to send requests to `http://localhost:3000/api/books` or `http://localhost:3000/api/borrow`.
+   Use Postman or similar tools to send requests to `http://localhost:5000/api/books` or `http://localhost:5000/api/borrow`.
 
 2. **Example Request (Create Book)**:
    ```bash
