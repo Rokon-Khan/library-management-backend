@@ -51,7 +51,7 @@ export const getBookById = async (req: Request, res: Response) => {
   try {
     const book = await Book.findById(req.params.bookId);
     if (!book)
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         message: "Book not found",
         error: "Not Found",
@@ -77,7 +77,7 @@ export const updateBook = async (req: Request, res: Response) => {
       runValidators: true,
     });
     if (!book)
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         message: "Book not found",
         error: "Not Found",
@@ -100,7 +100,7 @@ export const deleteBook = async (req: Request, res: Response) => {
   try {
     const book = await Book.findByIdAndDelete(req.params.bookId);
     if (!book)
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         message: "Book not found",
         error: "Not Found",
